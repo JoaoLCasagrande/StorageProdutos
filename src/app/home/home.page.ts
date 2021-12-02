@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Produto } from '../models/produto';
+import { StorageService } from '../services/storage.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  listaProdutos: Produto[] = [];
+
+  constructor(private storageService: StorageService) {}
+
+  async buscarProdutos() {
+    this.listaProdutos = await this.storageService.getAll();
+  }
+
+  ionViewDidEnter() {
+    this.buscarProdutos();
+  }
 
 }

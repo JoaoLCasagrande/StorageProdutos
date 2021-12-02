@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Cadastro do Produto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ <form class="prod-items" [formGroup]="formCadastro">
+
+  <ion-item>
+    <ion-label position="floating">Nome do Produto:</ion-label>
+    <ion-input formControlName="nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Quantidade:</ion-label>
+    <ion-input formControlName="quant"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Tipo:</ion-label>
+    <ion-input formControlName="tipo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Validade:</ion-label>
+    <ion-input formControlName="validade" placeholder="Ano-Mês-Dia"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Codigo de Barras:</ion-label>
+    <ion-input formControlName="codigobarra"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Preço:</ion-label>
+    <ion-input formControlName="preco" placeholder="Ex: R$5.90"></ion-input>
+  </ion-item>
+
+    <ion-button color="success" expand="full" (click)="salvarCadastro()">Salvar Cadastro</ion-button>
+
+ </form>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="medium">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-footer>

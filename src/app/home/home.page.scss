@@ -1,27 +1,28 @@
-#container {
+ion-title{
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
+  font-weight: bold;
   font-size: 20px;
-  line-height: 26px;
+  color: #000;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.cad-prod{
 
-  color: #8c8c8c;
+  border: #ff4961 3px solid;
+  border-radius: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 
-  margin: 0;
-}
+  h1{
+  text-align: center;
+  color: #ff4961;
+   font-family: monospace;
+   font-weight: bold;
+   font-size: 18pt;
+  }
 
-#container a {
-  text-decoration: none;
+  p{
+    font-family: Arial;
+    font-size: 13pt;
+  }
+
 }
